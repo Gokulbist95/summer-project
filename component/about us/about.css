@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutus{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-txt{
+    width: 50%;
+    font-family: 'Courgette',cursive;
+    margin-left: 15px;
+}
+
+.about-txt h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.about-txt p{
+    letter-spacing: .2px;
+}
+
+.about-img{
+    width: 50%;
+}
+img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+@media screen and (max-width:430px) {
+    .aboutus{
+        display: block;
+    }
+    .about-img{
+        width: auto;
+    }
+    .about-txt{
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .about-txt h2{
+        font-size: 14px;
+    }
+    .about-txt p{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Primarycolor: #f39c12;
+    --secondarcolor:#EAB543;
+    --buttoncolor: #008D45;
+    --grey:#95a5a6;
+    --nav-color:#2c3e50;
+    --nav-back:#F7F7F7;
+    --special:#F7F6F5;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    margin: 20px 0 20px 0 ;
+}
+
+
+/* checkout otrder */
+.checkout-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: auto;
+    width: 80%;
+    margin:0 auto;
+}
+
+.checkout h2{
+    text-align: center;
+    padding: 18px;
+    font-family: 'Roboto', cursive;
+    font-weight: 300;
+}
+
+.checkout-page .billing-details{
+    width: 60%;
+}
+
+.checkout-page .billing-details .checkout-form h4{
+    color: var(--Primarycolor);
+    background-color: var(--nav-color);
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    display: block;
+}
+
+.checkout-page .billing-details .checkout-form .form-group{
+    margin: 10px 5px;
+    width: 100%;
+}
+
+.p-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-page .billing-details .checkout-form label{
+    display: block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-family: 'roboto', sans-serif;
+}
+
+.checkout-page .billing-details .checkout-form input{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+}
+.checkout-page .billing-details .checkout-form input:focus{
+    outline: none;
+}
+
+/* map */
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:328px;
+    width:440px;
+    margin-bottom: 10px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:328px;
+    width:460px;
+    border-radius: 8px;
+}
+
+
+/* checkout */
+.cart{
+    width: 30%;
+    text-align: center;
+    margin-left: 20px;
+    height: auto;
+}
+
+.company{
+    display: flex;
+}
+.company img{
+    width: 20%;
+    margin-right: 20px;
+}
+
+.company p{
+    text-align: left;
+}
+
+.company p span{
+    display: block;
+    font-size: 10px;
+}
+.cart hr{
+    margin:5px 0;
+}
+
+.i-name{
+    height: 50px;
+}
+
+.order-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.o-option{
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+.o-option a{
+    text-decoration: none;
+    color: var(--grey);
+    margin: 0 2px;
+}
+
+.o-option a:hover{
+    color: black;
+}
+
+.additional{
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+}
+.additional input{
+    width: 80%;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.order-items{
+    margin-top: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.additional i{
+    position: absolute;
+    left:93%;
+    top: -50%;
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.sub, .add, .num{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sub:hover, .add:hover{
+    cursor: pointer;
+    background-color: var(--buttoncolor);
+    color: white;
+}
+
+/* .grand-total{
+    
+} */
+
+.sub-total{
+    display: block;
+}
+.sub-total div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sub-total div h3{
+    font-weight: 200;
+}
+
+
+.g-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.g-total h3{
+    font-weight: 200;
+}
+
+
+
+.coupon, .text-note{
+    margin-top: 20px;
+}
+
+.coupon{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: -2px 3px rgba(209, 209, 209, 0.5);
+}
+
+
+
+.coupon h3{
+    font-weight: 500;
+}
+
+.coupon input{
+    margin-top: 10px;
+    border-radius: 7px;
+    height: 30px;
+    text-align: left;
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+}
+
+.text-note h3{
+    font-weight: 200;
+}
+
+.text-note textarea{
+    margin-top: 10px;
+    border-radius: 7px;
+    height: 50px;
+    text-align: left;
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+}
+
+.text-note{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: -2px 3px rgba(209, 209, 209, 0.5);
+
+}
+
+.cart{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: -2px 3px rgba(209, 209, 209, 0.5);
+
+}
+
+.btn{
+    background-color: var(--buttoncolor);
+    color: white;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:430px){
+    .checkout-page{
+        display: block;
+        width: 100%;
+    }
+
+    .checkout-page .billing-details{
+        width: 100%;
+    }
+
+    .checkout-page .billing-details .checkout-form h4{
+        margin-top: 20px;
+    }
+
+    .mapouter{
+        width: auto;
+        height: auto;
+    }
+
+    .gmap_canvas{
+        width: auto;
+        height: auto;
+    }
+    .cart{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+/* paymet methods */
+
+.payment-method{
+    margin:30px 0px;
+}
+.payment-method h4{
+    color: var(--Primarycolor);
+    background-color: var(--nav-color);
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    display: block;
+}
+
+li{
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.payment-method li input{
+    cursor: pointer;
+    width: 30%;
+    float: left;
+}
+
+.additional-note{
+    margin:30px 0px;
+}
+
+.additional-note h4{
+    color: var(--Primarycolor);
+    background-color: var(--nav-color);
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    display: block;
+}
+
+.additional-note textarea{
+    border: 1px solid black;
+    margin: 0 20px;
+    width: 80%;
+    text-align: justify;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+}

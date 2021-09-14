@@ -1,0 +1,212 @@
+
+:root{
+    --Primarycolor: #f39c12;
+    --secondarcolor:#EAB543;
+    --buttoncolor: #008D45;
+    --grey:#95a5a6;
+    --nav-color:#2c3e50;
+    --nav-back:#F7F7F7;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    font-size:15px ;
+    font-weight: bold;
+    background-color: var(--nav-back);
+    font-family:var(--nav-font);
+}
+
+/* logo */
+.logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo h3{
+    color: var(--Primarycolor);
+}
+
+.logo h3 span{
+    color: black;
+    margin-left: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* navlinks */
+.nav-links{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links li a{
+    color: var(--nav-color);
+}
+
+.nav-links li a:hover{
+    cursor: pointer;
+    color: var(--secondarcolor);
+}
+
+/* users links */
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 18%;
+}
+
+.users li a{
+    color: black;
+}
+
+.users li a span{
+    font-size: 10px;
+    position: absolute;
+    top: 3%;
+    background-color: var(--buttoncolor);
+    padding: 3px;
+    border-radius: 50px;
+    color: white;
+}
+
+.out{
+    display: none;
+}
+
+/* for logout */
+
+/* .out li a{
+    font-size: 15x;
+    background-color: var(--buttoncolor);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+}
+.out li a:hover{
+    background-color: #00b859;
+} */
+
+.login:hover{
+    color: var(--secondarcolor);
+}
+
+.register:hover{
+    color: var(--secondarcolor);
+}
+
+/* hamburger */
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:720px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 5vh;
+        left: 25vh;
+        height: 20%;
+        width: 50%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        background-color: var(--nav-back);
+    }
+
+    .users {
+        width: 30%;
+    }
+    .users li{
+        margin: 10px;
+    }
+
+
+    /* hamburger */
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+} 
+
+@media screen and (max-width:720px) {
+    body{
+        overflow-x: hidden;
+    }
+    .login,.register{
+        font-size: 10px;
+    }
+    .users{
+        align-items: center;
+        width: 12%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .users{
+        width: 20%;
+    }
+}
+@media screen and (max-width:834px){
+    .nav-links{
+        font-size: 15px;
+    }
+    .users{
+        width: 20%;
+        font-size: 15px;
+    }
+}
+
+.show{
+    transform:translateX(0%);
+}
+
+@media screen and (max-width:1440px) {
+    .users li a span{
+        top: 2%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .users li a span{
+        top: 1%;
+    }
+}
+
+
+@media screen and (max-width:834px) {
+    .users li a span{
+        top: 1%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .users li a span{
+        top: 2%;
+    }
+}
+@media screen and (max-width:450px) {
+    .users li a span{
+        top: 3%;
+    }
+    .nav-links{
+        top: 10vh;
+    }
+}

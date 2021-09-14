@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.breadcrumbs{
+    text-align: center;
+    color: #fff;
+    font-family: 'roboto',sans-serif;
+}
+
+.breadcrumbs h1{
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 5%;
+    font-size: 40px;
+}
+
+.banner-area{
+    background-size: contain;
+    background-position: cover;
+    height: 30vh;
+    object-fit: fill;
+    width: 100%;
+    position: fixed;
+}
+
+.banner-area:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 30vh;
+    background: black;
+    opacity: .4;
+    z-index: -1;
+}
+
+@media only screen and (max-width:512px){
+    .breadcrumbs h1{
+        padding-top: 12%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .breadcrumbs h1{
+        padding-top: 16%;
+    }
+}

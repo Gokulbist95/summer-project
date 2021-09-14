@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <!-- Custome Css -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- navigation starts -->
+        <nav>
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <h3>R<span>Tree</span></h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+
+            <ul class="users">
+                <li><a href="#" class="logout" id="logout">Log out</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- navigation ends here -->
+    </header>
+
+    <main>
+        <!--user profile-->
+        <section class="user">
+            <div class="user-container">
+                <div class="user-details">
+                    <div class="class-rect order active">
+                        <i class="far fa-clipboard"></i>
+                        <h3>My Order</h3>
+                    </div>
+                    <div class="class-rect e-profile">
+                        <i class="fas fa-user"></i>
+                        <h3>Edit Profile</h3>
+                    </div>
+                    <div class="class-rect psw">
+                        <i class="fas fa-key"></i>
+                        <h3>Change password</h3>
+                    </div>
+                    <div class="class-rect refer1">
+                        <i class="fas fa-users"></i>
+                        <h3>Refer a Friend</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="users-info">
+                    <div class="my-order">
+                        <!-- <h4>Orders</h4> -->
+                        <table>
+                            <tr>
+                                <th>Invoice No.</th>
+                                <th>Order-Date</th>
+                                <th>Grand Total</th>
+                                <th>Payment Method</th>
+                                <th>Order Status</th>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#" style="color: blue;">123das</a></td>
+                                <td> 2020-08-08 </td>
+                                <td> Rs 190/-</td>
+                                <td> cash in Hand</td>
+                                <td style="color: green;"> On going </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" style="color: blue;">123das</a></td>
+                                <td> 2020-08-08 </td>
+                                <td> Rs 190/-</td>
+                                <td> cash in Hand</td>
+                                <td style="color: green;"> On going </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" style="color: blue;">123das</a></td>
+                                <td> 2020-08-08 </td>
+                                <td> Rs 190/-</td>
+                                <td> cash in Hand</td>
+                                <td style="color: green;"> On going </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="profile hide">
+                        <h4>Users Profile</h4>
+
+                        <div class="profile-details">
+                            <div class="user-profile">
+                                <img src="../assets/images/users/name.jpg" alt="#">
+                                <a href="#">Change Photo</a>
+                            </div>
+
+                            <form action="#">
+                                <div class="inputfields">
+                                    <label for="Name">Username</label>
+                                    <input type="text" name="username" id="U-name">
+                                </div>
+                                <div class="inputfields">
+                                    <label for="mail">Mail Id</label>
+                                    <input type="mail" name="mail" id="mail">
+                                </div>
+                                <div class="inputfields">
+                                    <label for="address">Address</label>
+                                    <input type="text" name="address" id="u-address">
+                                </div>
+                                <div class="inputfields">
+                                    <label for="Phone">Number</label>
+                                    <input type="text" name="number" id="p-number">
+                                </div>
+                            </form>
+
+                            <input type="button" value="Update">
+
+                        </div>
+                    </div>
+
+                    <!-- activate if notification needed -->
+                    <!-- <div class="notify-container">
+                        <h4>Notifications</h4>
+                        <div class="notify-center">
+                            <div class="notify1">
+                                <div class="container">
+                                    <div class="notifs">
+                                        <div class="previews">
+                                            <h6>5 Sep 2021</h6>
+                                            <h2>The Hungry Owl</h2>
+                                            <p>Maitidevi,Kathmandu</p>
+                                        </div>
+                                        <div class="info">
+                                        <h2>Limited Time Offer</h2>
+                                        <p class="p-trunc">Order Momo, Chowmein or
+                                             Fried rice combo meals from 
+                                             The Hungry Owl and enjoy with 
+                                             2 Pints of Free Beer! Open till 3am!
+                                        </p>
+                                        <button class="btn">Order Now</button>
+                                        </div>  
+                                    </div>
+                                    <div class="notifs">
+                                        <div class="previews">
+                                            <h6>5 Sep 2021</h6>
+                                            <h2>The Hungry Owl</h2>
+                                            <p>Maitidevi,Kathmandu</p>
+                                        </div>
+                                        <div class="info">
+                                        <h2>Limited Time Offer</h2>
+                                        <p class="p-trunc">Order Momo, Chowmein or
+                                             Fried rice combo meals from 
+                                             The Hungry Owl and enjoy with 
+                                             2 Pints of Free Beer! Open till 3am!
+                                        </p>
+                                        <button class="btn">Order Now</button>
+                                        </div>  
+                                    </div>
+                                    <div class="notifs">
+                                        <div class="previews">
+                                            <h6>5 Sep 2021</h6>
+                                            <h2>The Hungry Owl</h2>
+                                            <p>Maitidevi,Kathmandu</p>
+                                        </div>
+                                        <div class="info">
+                                        <h2>Limited Time Offer</h2>
+                                        <p class="p-trunc">Order Momo, Chowmein or
+                                             Fried rice combo meals from 
+                                             The Hungry Owl and enjoy with 
+                                             2 Pints of Free Beer! Open till 3am!
+                                        </p>
+                                        <button class="btn">Order Now</button>
+                                        </div>  
+                                    </div>
+                                    <div class="notifs">
+                                        <div class="previews">
+                                            <h6>5 Sep 2021</h6>
+                                            <h2>The Hungry Owl</h2>
+                                            <p>Maitidevi,Kathmandu</p>
+                                        </div>
+                                        <div class="info">
+                                        <h2>Limited Time Offer</h2>
+                                        <p class="p-trunc">Order Momo, Chowmein or
+                                             Fried rice combo meals from 
+                                             The Hungry Owl and enjoy with 
+                                             2 Pints of Free Beer! Open till 3am!
+                                        </p>
+                                        <button class="btn">Order Now</button>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                
+                    <div class="change-psw hide">
+                        <h4>Change Password</h4>
+                        <div class="psw-change">
+                            <form action="#">
+                                <div class="input-field">
+                                    <label for="password">Old password</label>
+                                    <input type="password" name="old password" id="o-password">
+                                </div>
+                                <div class="input-field">
+                                    <label for="password">New password</label>
+                                    <input type="password" name="new password" id="n-password">
+                                </div>
+                                <div class="input-field">
+                                    <label for="password">Confirm Password</label>
+                                    <input type="password" name="confirm password" id="c-password">
+                                </div>
+                            </form>
+                            <input type="button" value="Update">
+                        </div>
+                    </div>
+
+                    <div class="refer hide">
+                        <h4>Refer a friend</h4>
+                        <div class="refer-friend">
+                            <div class="refer-img">
+                                <img src="../assets/images/slid-1.png" alt="#">
+                            </div>
+                            <div class="refer-details">
+                                <p>Lorem ipsum dolor sit amet, consectetur 
+                                    adipisicing elit. Ipsam vero, quidem natus 
+                                    consequuntur, temporibus suscipit illo voluptate officiis 
+                                    at perspiciatis maiores obcaecati, eius saepe recusandae! 
+                                    Itaque distinctio sit quibusdam autem!
+                                </p>
+                            </div>
+                            <div class="refer-share">
+                                <input type="text" placeholder="ASDF123S" id="code"disabled>
+                                <i class="fas fa-share-alt"></i>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="our-details">
+                <h3>About Foodtree</h3>
+                <ul>
+                    <li><a href="#">Available area</a></li>
+                    <li><a href="#">Charges</a></li>
+                    <li><a href="#">blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- get help -->
+            <div class="gethelp">
+                <h3>Get Help</h3>
+                <ul>
+                    <li><a href="#">How To Order?</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- legal -->
+            <div class="t-c">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms and condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="apps">
+                <div class="download">
+                    <h3>Download App From</h3>
+                    <div class="d-links">
+                        <a href="#"><img src="../assets/images/android.png" alt="#"></a>
+                        <a href="#"><img src="../assets/images/iphone.png" alt="#"></a>
+                    </div>
+                </div>
+                <div class="social">
+                    <h3>Connect with us:</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy">
+            <p>copyright &copy;2021 defttree</p>
+        </div>
+    </footer>
+
+
+    <script src="../js/profile.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

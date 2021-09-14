@@ -1,0 +1,319 @@
+
+:root{
+    --Primarycolor: #f39c12;
+    --secondarcolor:#EAB543;
+    --buttoncolor: #008D45;
+    --grey:#95a5a6;
+    --nav-color:#2c3e50;
+    --nav-back:#F7F7F7;
+}
+
+@media screen and (max-width:720px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 5vh;
+        left: 25vh;
+        height: 20%;
+        width: 50%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+        background-color: var(--nav-back);
+    }
+
+    .users {
+        width: 30%;
+    }
+    .users li{
+        margin: 10px;
+    }
+
+
+    /* hamburger */
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    /* banner section */
+
+    .slider img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* banner content */
+
+    .content{
+        top: 17% !important;
+        left: -2%;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .content h1{
+        font-weight: 300;
+        color:black;
+        text-align: left;
+    }
+    .content h1 span{
+        color: var(--Primarycolor);
+    }
+
+    .selector{
+        display: block;
+    }
+    .selector input{
+        font-size: 8px;
+        padding: 3px;
+    }
+    .search{
+        margin: 10px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    body{
+        overflow-x: hidden;
+    }
+    .login,.register{
+        font-size: 10px;
+    }
+    .users{
+        align-items: center;
+        width: 12%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .users{
+        width: 20%;
+    }
+}
+@media screen and (max-width:834px){
+    .nav-links{
+        font-size: 15px;
+    }
+    .users{
+        width: 20%;
+        font-size: 15px;
+    }
+}
+
+.show{
+    transform:translateX(0%);
+}
+
+@media screen and (max-width:1440px) {
+    .users li a span{
+        top: 2%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .users li a span{
+        top: 1%;
+    }
+}
+
+
+@media screen and (max-width:834px) {
+    .users li a span{
+        top: 1%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .users li a span{
+        top: 2%;
+    }
+}
+@media screen and (max-width:450px) {
+    .users li a span{
+        top: 3%;
+    }
+    .nav-links{
+        top: 10vh;
+    }
+}
+
+/* banner */
+
+@media screen and (max-width:720px) {
+    .content{
+        top: 20%;
+        left: 13%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 5px;
+        width: 70%;
+    }
+
+    .content h1{
+        font-size: 12px;
+        color: #fff;
+        margin: 5px;
+        text-align:  center;
+    }
+
+    .select{
+        font-size: 9px;
+        padding: 1px;
+    }
+    .search{
+        font-size:8px ;
+    }
+    .search:hover{
+        color: black;
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:376px){
+    .content{
+        top: 20%;
+        left: 9%;
+        padding: 5px;
+    }
+    .select{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .content{
+        top: 18%;
+        width: auto;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+    .content h1{
+        color: white;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .content{
+        top: 25%;
+    }
+    .p-container{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:720px){
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:1280px){
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* about us */
+
+@media screen and (max-width:430px) {
+    .aboutus{
+        display: block;
+        background-color: var(--nav-color);
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .about-img{
+        width: auto;
+    }
+    .about-txt{
+        width: auto;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .about-txt h2{
+        font-size: 14px;
+    }
+    .about-txt p{
+        font-size: 10px;
+        font-weight: 200;
+    }
+}
+
+/* order process */
+
+@media screen and (max-width:720px){
+    
+    .p-container{
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-container h1{
+        margin-top: 20px;
+        font-weight: 300;
+    }
+
+    .or-process{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .or-process div{
+        margin: 10px;
+        width: 40%;
+    }
+
+    .or-process img{
+       height: auto;
+    }
+    
+}
+
+@media screen and (max-width:720px){
+    .rbox-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .rbox{
+        width: 80%;
+    }
+    .restaurants h3{
+        margin: 0 0 25px 0; 
+    }
+
+    .abt-txt p{
+        text-align: justify;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    .abt-txt a{
+        margin-top: 10em;
+    }
+
+    .about{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5)),url(../assets/images/abt-food.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        word-spacing: 2px;
+    }
+}
+
+
+

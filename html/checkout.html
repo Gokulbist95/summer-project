@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <h3>R<span>Tree</span></h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+
+            <ul class="users">
+                <li><a href="#" class="login" id="show-login">Login</a></li>
+                <li><a href="#" class="register">Register</a></li>
+                <li><a href="#"><i><i class="fas fa-shopping-cart"><span>1</span></i></i></a></li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout">
+            <h2>Billing page</h2>
+            <div class="checkout-page">
+                <div class="billing-details">
+                    <form action="#" class="checkout-form">
+                        <h4>Billing address</h4>
+                        <div class="p-details">
+                            <div class="form-group">
+                                <label for="Full Name">Name</label>
+                                <input type="text" name="fname" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Number">Number</label>
+                                <input type="text" name="fname" id="number">
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="mail">mail id</label>
+                            <input type="text" name="fname" id="mail-id">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="coupon">coupon no</label>
+                            <input type="text" name="fname" id="coupon">
+                        </div> -->
+                        <div class="additional-note">
+                            <h4>Delivery Note</h4>
+                            <textarea name="note" id="add-note" cols="30" rows="3" placeholder="Additional Note"></textarea>
+                        </div>
+
+                        <h4>Address details</h4>
+
+                        <div class="form-group">
+                            <label for="address">address</label>
+                            <input type="text" name="fname" id="mail-id">
+                        </div>
+                        
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="443" height="428" id="gmap_canvas" 
+                                    src="https://maps.google.com/maps?q=kathmandu,%20nepal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://putlocker-is.org"></a><br>
+                                    <a href="https://www.embedgooglemap.net">iframe html generator</a>
+                                </div>
+                            </div>
+                    </form>
+                    <div class="payment-method">
+                        <h4>Payment Methods</h4>
+                            <li><input type="radio" name="payment" id="eSewa">eSewa</li>
+                            <li><input type="radio" name="payment" id="imepay">Ime Pay</li>
+                            <li><input type="radio" name="payment" id="khalti">Khalti</li>
+                            <li><input type="radio" name="payment" id="fonepay">Fone pay</li>
+                            <li><input type="radio" name="payment" id="cod">Cash on Delivery</li>
+                        
+                    </div>  
+                </div>
+                <div class="cart">
+                    <div class="cart-items">
+                        <div class="company">
+                            <img src="../../assets/images/Catogories/c1.jpg" alt="#" class="c-logo">
+                            <p class="c-name">Food tree <span>Lazimpat, Kathmandu, Nepal</span></p>
+                        </div>
+                        <hr>
+                        <div class="Bill">
+                            <div class="order-items">
+                                <div class="i-name">
+                                    Mo:MO
+                                    <div class="o-option">
+                                        <a href="#" class="add-item">Add note</a>
+                                        <a href="#">remove</a>
+                                    </div>
+
+                                    <div class="additional hide">
+                                        <input type="text" name="add-items" class="add-items">
+                                        <i class="close">x</i>
+                                    </div>
+                                </div>
+                                <div class="counter">
+                                    <button class="sub" value="minus" >-</button>
+                                    <span class="num" >1</span>
+                                    <button class="add" value="increase"  onclick="addAmount()">+</button>
+                                </div>
+                                <p class="total"> Rs 300/-</p>
+                            </div>
+                            
+
+                            <hr>
+                        </div>
+                        <div class="grand-total">
+                            <div class="sub-total">
+                                <div class="total">
+                                    <h3>Total</h3>
+                                    <p>Rs 300/-</p>
+                                </div>
+                                <div class="Discount">
+                                    <h3>Discount (10%)</h3>
+                                    <p>Rs 30/-</p>
+                                </div>
+                                <div class="Cherge">
+                                    <h3>Service (15%)</h3>
+                                    <p>Rs 40/-</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="g-total">
+                                <h3>Grand total</h3>
+                                <p>Rs 370/-</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="coupon">
+                            <h3>Enter your coupon Number</h3>
+                            <input type="text" name="coupon" id="coupon">
+                    </div>
+                    <!-- <div class="text-note">
+                            <h3>Delivery Note here</h3>
+                            <textarea name="note" id="note" cols="30" rows="2"></textarea>
+                    </div> -->
+                <button class="btn">Go to Checkout</button>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="our-details">
+                <h3>About Foodtree</h3>
+                <ul>
+                    <li><a href="#">Available area</a></li>
+                    <li><a href="#">Charges</a></li>
+                    <li><a href="#">blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- get help -->
+            <div class="gethelp">
+                <h3>Get Help</h3>
+                <ul>
+                    <li><a href="#">How To Order?</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- legal -->
+            <div class="t-c">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms and condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="apps">
+                <div class="download">
+                    <h3>Download App From</h3>
+                    <div class="d-links">
+                        <a href="#"><img src="../assets/images/android.png" alt="#"></a>
+                        <a href="#"><img src="../assets/images/iphone.png" alt="#"></a>
+                    </div>
+                </div>
+                <div class="social">
+                    <h3>Connect with us:</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy">
+            <p>copyright &copy;2021 defttree</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const burger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav-links");
+burger.addEventListener("click",() => {
+    nav.classList.toggle('show');
+});
+    </script>
+</body>
+</html>

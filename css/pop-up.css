@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Primarycolor: #f39c12;
+    --secondarcolor:#EAB543;
+    --buttoncolor: #008D45;
+    --grey:#95a5a6;
+    --nav-color:#2c3e50;
+    --nav-back:#F7F7F7;
+}
+
+body{
+    background: rgb(230, 254, 255);
+}
+
+.pop-up{
+    width:80%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    border-radius: 7px;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+}
+
+.pop-up h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.order-info, .customer-info, .payment{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.o-code, .o-date, .c-name, .c-mail, .c-number, .p-method, .status{
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.o-code span, .o-date span, .c-name span, .c-mail span, 
+.c-number span, .p-method span, .status span{
+    font-weight: 400;
+}
+
+
+/* table */
+table{
+    width: 100%;
+    margin-top: 35px;
+    color: white;
+}
+
+tr{
+    padding: 4em;
+}
+
+th{
+    font-weight: 400;
+    background: var(--nav-color);
+}
+
+td{
+    color: black;
+}
+
+.final-bill{
+    width: 40%;
+    float: right;
+    margin: 18px 125px;
+}
+
+.sub-total, .discount, .vat, 
+.delivery-charge,.grand-total{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.final-bill h3{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.grand-total h3{
+    font-weight: 700;
+}
